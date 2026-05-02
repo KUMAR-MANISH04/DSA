@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+/*
+ * ============================================================================
+ * Topic: Printing all Permutations
+ * Description: Dedicated Implementation exclusively isolating this recursive flow.
+ * ============================================================================
+ */
+
+void permute(string s, int i=0) {
+    if(i == s.length() - 1) { cout << s << " "; return; }
+    for(int j = i; j <= s.length() - 1; j++) {
+        swap(s[i], s[j]);
+        permute(s, i+1);
+        swap(s[i], s[j]); // Backtrack
+    }
+}
+int main() {
+    permute("ABC"); return 0;
+}
+/* EXPECTED OUTPUT:
+ * ABC ACB BAC BCA CBA CAB 
+ */
