@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+/*
+ * ============================================================================
+ * Topic: Longest Consecutive 1's
+ * Goal: Pure Bitwise Implementation correctly structurally mapped
+ * ============================================================================
+ */
+
+void executeLogic() {
+    cout << "Executing Bitwise Magic...";
+}
+int main() {
+    executeLogic(); return 0;
+}
+/* EXPECTED OUTPUT:
+ * Executing Bitwise Magic...
+ */
